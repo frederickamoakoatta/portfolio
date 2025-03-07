@@ -1,6 +1,3 @@
-Here's a well-structured **README.md** for your official website repository:
-
-```markdown
 # My Official Website 🌐
 
 This is the repository for my **official website**, a modern **one-page site** built with **React** and **Vite**. The site showcases my work, experience, and projects in a sleek and responsive design.
@@ -12,7 +9,6 @@ This is the repository for my **official website**, a modern **one-page site** b
 - **React Icons** – For lightweight and scalable icons
 
 ## 📂 Project Structure
-```
 
 ../assets/          # Static assets (images, icons, etc.)
 
@@ -23,7 +19,7 @@ This is the repository for my **official website**, a modern **one-page site** b
 App.tsx         # Main application entry
 
 main.tsx        # Vite main entry
-```
+
 
 ## ⚡ Installation & Setup
 To run the project locally, follow these steps:
