@@ -54,8 +54,8 @@ This site is deployed on **Vercel**.
 
 ## 📬 Contact
 Feel free to connect with me on:
-- **GitHub:** [My GitHub](https://github.com/frederickamoakoatta)
-- **LinkedIn:** [My linkedin](https://www.linkedin.com/in/frederick-amoako-atta-8097a0158/)
+- **GitHub:** [https://github.com/frederickamoakoatta](https://github.com/frederickamoakoatta)
+- **LinkedIn:** [https://www.linkedin.com/in/frederick-amoako-atta-8097a0158](https://www.linkedin.com/in/frederick-amoako-atta-8097a0158/)
 - **Email:** amoakofredatta@gmail.com
 
 ---
