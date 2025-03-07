@@ -13,13 +13,16 @@ This is the repository for my **official website**, a modern **one-page site** b
 
 ## 📂 Project Structure
 ```
-/src
-├── assets/          # Static assets (images, icons, etc.)
-├── components/      # Reusable UI components
-├── sections/        # Individual sections (About, Experience, Projects, Contact)
-├── styles/          # Global SCSS styles
-├── App.tsx         # Main application entry
-├── main.tsx        # Vite main entry
+
+../assets/          # Static assets (images, icons, etc.)
+
+../components/      # Reusable UI components
+
+../sections/        # Individual sections (About, Experience, Projects, Contact)
+
+App.tsx         # Main application entry
+
+main.tsx        # Vite main entry
 ```
 
 ## ⚡ Installation & Setup
