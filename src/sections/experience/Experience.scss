@@ -1,0 +1,99 @@
+@use "../../../colors" as colors;
+@use "../../../variables" as vars;
+
+.experience {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  margin: 0 auto;
+  background-color: colors.$background-alt;
+  box-sizing: border-box;
+
+  .experience-card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+    background: colors.$white;
+    padding: 15px;
+    border-radius: 16px;
+    border : 1px solid colors.$grey;
+    margin-bottom: 20px;
+    transition: 0.3s;
+
+    .company-logo {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: contain;
+    }
+
+    .experience-details {
+      flex: 1;
+
+      .company {
+        font-size: 1rem;
+        color: colors.$text;
+        margin-bottom: 2px;
+        font-weight: bold;
+      }
+
+      .duration,
+      .location {
+        font-size: 0.9rem;
+        color: #777;
+        margin-bottom: 5px;
+      }
+
+      .description {
+        font-size: 1rem;
+        color: #444;
+        margin-bottom: 10px;
+      }
+
+      .skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+
+      }
+    }
+    &:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 15px #EEEEEE;
+    }
+  }
+
+  // Mobile responsiveness
+  @media (max-width: 768px) {
+    .experience-card {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      .company-logo {
+        width: 40px;
+        height: 40px;
+      }
+
+      .experience-details {
+        h3 {
+          font-size: 1.1rem;
+        }
+
+        .company,
+        .duration,
+        .location,
+        .description {
+          font-size: 1rem;
+        }
+
+        .skills {
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

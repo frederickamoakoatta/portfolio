@@ -1,0 +1,59 @@
+@use "../colors" as colors;
+@use "../variables" as vars;
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+h1, h2 {
+  margin: 0;
+  font-family: "Lobster", sans-serif;
+}
+
+h3 {
+  margin: 0;
+}
+
+h1 {
+  color: #fff;
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-size: 4em;
+  letter-spacing: 0.05em;
+  line-height: 0.9em;
+}
+
+h2 {
+  //color: lighten(colors.$base-color, 25%);
+  //font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 2em;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: colors.$text;
+  margin-bottom: 30px;
+}
+
+.main-spacing {
+  padding: 80px 150px;
+}
+
+
+// Mobile Responsiveness
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+}

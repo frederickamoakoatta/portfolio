@@ -1,0 +1,35 @@
+@use 'colors' as colors;
+
+
+@mixin transition($duration: 0.5s, $func: ease, $property: all) {
+  transition: #{$duration} #{$func} #{$property};
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content;
+  }
+
+  &:-moz-placeholder {
+    @content;
+    opacity: 1;
+  }
+
+  &::-moz-placeholder {
+    @content;
+    opacity: 1;
+  }
+
+  &:-ms-input-placeholder {
+    @content;
+  }
+}
+
+@keyframes dropHeader {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
