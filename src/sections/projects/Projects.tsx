@@ -15,14 +15,14 @@ interface Project {
 
 // Sample project data
 const projects: Project[] = [
-    {
-        id: 1,
-        name: "Minilink",
-        description: "I developed a Chrome plugin that automatically shortens URLs detected on an active page. This project was built using React and deployed through the Chrome Web Store for seamless distribution.",
-        liveUrl: "",
-        githubUrl: "",
-        technologies: ["React", "Typescript", "React Query", "RTL", "Chrome Store"],
-    },
+    // {
+    //     id: 1,
+    //     name: "Minilink",
+    //     description: "I developed a Chrome plugin that automatically shortens URLs detected on an active page. This project was built using React and deployed through the Chrome Web Store for seamless distribution.",
+    //     liveUrl: "",
+    //     githubUrl: "",
+    //     technologies: ["React", "Typescript", "React Query", "RTL", "Chrome Store"],
+    // },
     {
         id: 2,
         name: "ReadMe Generator",
@@ -60,7 +60,7 @@ const projects: Project[] = [
 const Projects: React.FC = () => {
     return (
         <section className="project-container main-spacing">
-            <h2>Projects</h2>
+            <h2 className="section-title">Projects</h2>
             <div className="projects">
                 {projects.map((project, index) => (
                     <div className="project-card" key={index}>

@@ -3,20 +3,20 @@
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  box-sizing: border-box;
 
   iframe {
     position: absolute;
     top: 50%;
     left: 50%;
     width: 100vw;
-    height: 56.25vw; // 16:9 aspect ratio
+    height: 56.25vw;
     min-height: 100vh;
-    min-width: 177.77vh; // 16:9 aspect ratio
+    min-width: 177.77vh;
     transform: translate(-50%, -50%);
-    pointer-events: none; // Prevents user interaction
+    pointer-events: none;
     transition: opacity 1s ease-in-out;
 
-    // When the video is loaded, make it visible
     &.loaded {
       opacity: 1;
     }
@@ -51,5 +51,12 @@
     text-align: center;
     color: white;
     z-index: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .video-banner {
+    width: 100%;
+    height: 60vh;
   }
 }

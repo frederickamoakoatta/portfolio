@@ -12,12 +12,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
 
-  .hero-subtitle{
-    font-size: 2em;
-    margin: 0.5em;
-    color: colors.$base-color
-  }
+.hero-subtitle{
+  font-size: 2em;
+  margin: 0.5em;
+  color: colors.$base-color
 }
 
 #lead-overlay {
@@ -71,5 +71,17 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+}
+
+
+@media (max-width: 768px) {
+  #lead-content{
+    width: 100%;
+  }
+
+  .hero-subtitle {
+    font-size: 1.3em;
+    //display: none;
   }
 }
