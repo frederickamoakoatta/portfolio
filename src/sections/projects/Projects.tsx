@@ -59,7 +59,7 @@ const projects: Project[] = [
 
 const Projects: React.FC = () => {
     return (
-        <section className="project-container main-spacing">
+        <section className="project-container main-spacing" id="projects">
             <h2 className="section-title">Projects</h2>
             <div className="projects">
                 {projects.map((project, index) => (

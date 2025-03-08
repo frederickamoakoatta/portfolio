@@ -57,7 +57,7 @@ const experiences: Array<ExperienceItem> = [
 
 const Experience: React.FC = () => {
     return (
-        <section className="experience main-spacing">
+        <section className="experience main-spacing" id="experience">
             <h2 className="section-title">Work Experience</h2>
             {experiences.map((exp) => (
                 <div className="experience-card" key={exp.id}>

@@ -12,6 +12,7 @@ header {
   animation-iteration-count: 1;
   animation-timing-function: ease;
   animation-duration: 0.75s;
+  cursor: pointer;
 
   ul {
     display: inline-block;
@@ -27,7 +28,7 @@ header {
     display: inline-block;
   }
 
-  a {
+  .link {
     display: block;
     color: colors.$base-color;
     font-weight: bold;
@@ -35,9 +36,9 @@ header {
     text-decoration: none;
 
     &:hover {
-      color: colors.$base-color-hover;
+      color: colors.$white;
+      background-color: colors.$base-color;
       text-decoration: none;
-      background: #eee;
       border-radius: 4px;
     }
 
@@ -50,112 +51,8 @@ header {
   &.active {
     display: block;
   }
-
-  &.sticky {
-    position: fixed;
-    z-index: 999;
-  }
 }
 
-#menu {
-  &.active {
-    display: block;
-  }
-}
-
-#mobile-menu-open {
-  display: none;
-  cursor: pointer;
-  position: fixed;
-  right: 15px;
-  top: 10px;
-  color: colors.$base-color;
-  font-size: 1.5em;
-  z-index: 20;
-  padding: 0 7px;
-  border-radius: 4px;
-  background: colors.$background;
-}
-
-#mobile-menu-close {
-  display: none;
-  text-align: right;
-  width: 100%;
-  background: colors.$background;
-  font-size: 1.5em;
-  padding-right: 15px;
-  padding-top: 10px;
-  cursor: pointer;
-  color: colors.$base-color;
-
-  span {
-    font-size: 0.5em;
-    text-transform: uppercase;
-  }
-
-  i {
-    vertical-align: middle;
-  }
-}
-
-
-
-footer {
-  padding: 50px 0;
-}
-
-.copyright {
-  padding-top: 20px;
-
-  p {
-    margin: 0;
-    color: colors.$text;
-  }
-}
-
-.top {
-  text-align: center;
-
-  span {
-    cursor: pointer;
-    display: block;
-    margin: 15px auto 0 auto;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    border: 3px solid lighten(colors.$text, 25%);
-    text-align:center;
-  }
-
-  i {
-    color: colors.$text;
-  }
-}
-
-.social {
-  text-align: right;
-
-  ul {
-    margin: 5px 0 0 0;
-    padding: 0;
-  }
-
-  li {
-    display: inline-block;
-    font-size: 1.25em;
-    list-style: none;
-  }
-
-  a {
-    display: block;
-    color: colors.$text;
-    padding: 10px;
-
-    &:hover {
-      color: colors.$base-color;
-    }
-  }
-}
 
 @media (max-width: 768px) {
   header {

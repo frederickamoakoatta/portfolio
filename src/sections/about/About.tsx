@@ -21,7 +21,7 @@ const skills = [
 
 const AboutMe = () => {
     return (
-        <section className="about-me main-spacing">
+        <section className="about-me main-spacing" id="about">
             <h2>About Me</h2>
             <p>
                 I'm a design-driven Front-End Developer with AWS Cloud Certification and a UI Design Certification from
