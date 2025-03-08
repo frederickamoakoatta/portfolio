@@ -11,7 +11,7 @@ const Banner = () => {
                 </div>
                 <h1>Frederick Amoako-Atta</h1>
                 <p className="hero-subtitle">Frontend Javascript Engineer</p>
-                <Button link={'#'} type={'secondary'} label={'Download Resume'}/>
+                <Button link={'/FrederickAmoakoAtta-CV.pdf'} type={'secondary'} label={'Download Resume'}/>
             </div>
         </>
     )
